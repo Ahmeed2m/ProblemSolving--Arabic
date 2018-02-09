@@ -18,3 +18,20 @@ int solution(int A[], int N)
     
     return 1;
 }
+
+
+//my solution
+
+int e[100009];
+
+int solution(vector<int> &a) {
+    // write your code in C++14 (g++ 6.2.0)
+    int n=a.size();
+    for(int i : a){
+        if(i>n||e[i]==1){
+            return 0;
+        }
+        e[i]=1;
+    }
+    return 1;
+}
