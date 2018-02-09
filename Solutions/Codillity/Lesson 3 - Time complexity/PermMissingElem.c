@@ -15,3 +15,19 @@ int solution(int A[], int N)
 }
 
 
+My solution 
+
+#include <algorithm>
+
+int solution(vector<int> &a) {
+   a.push_back(0);
+   int c=0;
+   sort(a.begin(),a.end());
+   for(int i : a){
+       if(i!=c){
+           return i-1;
+       }
+       c++;
+   }
+   return a.size();
+}
