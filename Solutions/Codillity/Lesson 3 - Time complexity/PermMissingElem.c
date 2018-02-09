@@ -15,7 +15,7 @@ int solution(int A[], int N)
 }
 
 
-My solution 
+//My solution 
 
 #include <algorithm>
 
